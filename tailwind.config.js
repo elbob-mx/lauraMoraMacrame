@@ -3,9 +3,9 @@ module.exports = {
   content: ['./*/index.html'],
   theme: {
     screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
+      sm: '0px',
+      md: '650px',
+      lg: '920px',
       laptop: '1024px',
       desktop: '1280px'
     },
@@ -16,6 +16,11 @@ module.exports = {
       colors: {
         kraft: "#AC9276",
         cold: "#404C4C",
+        string: "#EFE5D3",
+        stringObscuro: "#999793",
+      },
+      dropShadow: {
+        'darker': '0 5px 5px rgba(58, 25, 0, 0.30)',
       }
     },
   },
