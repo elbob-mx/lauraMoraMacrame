@@ -11,7 +11,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-      'ibmPlex': ['"IBM Plex Sans"', 'sans-serif']
+      'ibmPlex': ['"IBM Plex Sans"', 'sans-serif'],
+      'courier': ['"Courier Prime"', 'monospace'],
       },
       colors: {
         kraft: "#AC9276",
