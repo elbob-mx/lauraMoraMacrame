@@ -567,6 +567,10 @@ video {
   margin-bottom: 5rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .grid {
   display: grid;
 }
@@ -627,10 +631,6 @@ video {
   text-align: center;
 }
 
-.font-ibmPlex {
-  font-family: "IBM Plex Sans", sans-serif;
-}
-
 .font-courier {
   font-family: "Courier Prime", monospace;
 }
@@ -638,6 +638,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .italic {
@@ -656,6 +661,11 @@ video {
 .text-stone-500 {
   --tw-text-opacity: 1;
   color: rgb(120 113 108 / var(--tw-text-opacity));
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .duration-500 {
@@ -688,16 +698,20 @@ video {
 }
 
 @media (min-width: 0px) {
-  .sm\:m-0 {
-    margin: 0px;
+  .sm\:m-2 {
+    margin: 0.5rem;
+  }
+
+  .sm\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .sm\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .sm\:h-20 {
     height: 5rem;
-  }
-
-  .sm\:h-40 {
-    height: 10rem;
   }
 
   .sm\:w-36 {
