@@ -19,9 +19,10 @@ module.exports = {
         cold: "#404C4C",
         string: "#EFE5D3",
         stringObscuro: "#999793",
+        calmViolet: "#5F33FF"
       },
       dropShadow: {
-        'darker': '0 5px 5px rgba(58, 25, 0, 0.30)',
+        'darker': '0 3px 3px rgba(58, 25, 0, 0.30)',
       }
     },
   },
