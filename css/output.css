@@ -567,8 +567,8 @@ video {
   margin: 1rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mb-20 {
@@ -577,14 +577,6 @@ video {
 
 .mt-0 {
   margin-top: 0px;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .flex {
@@ -599,10 +591,6 @@ video {
   height: 100vh;
 }
 
-.max-h-screen {
-  max-height: 100vh;
-}
-
 .w-full {
   width: 100%;
 }
@@ -611,23 +599,8 @@ video {
   width: 3rem;
 }
 
-.rotate-12 {
-  --tw-rotate: 12deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-3 {
-  --tw-rotate: 3deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .rotate-2 {
   --tw-rotate: 2deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-rotate-3 {
-  --tw-rotate: -3deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -645,12 +618,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.divide-x-0 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(0px * var(--tw-divide-x-reverse));
-  border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
 .overflow-y-scroll {
@@ -680,6 +647,11 @@ video {
   background-color: rgb(255 251 235 / var(--tw-bg-opacity));
 }
 
+.object-none {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -687,6 +659,10 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -707,6 +683,21 @@ video {
   line-height: 1rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -718,10 +709,6 @@ video {
 
 .italic {
   font-style: italic;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
 }
 
 .tracking-wider {
@@ -751,6 +738,15 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -768,20 +764,6 @@ video {
   background-color: rgb(95 51 255 / var(--tw-bg-opacity));
 }
 
-.hover\:font-bold:hover {
-  font-weight: 700;
-}
-
-.hover\:text-stone-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(41 37 36 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:drop-shadow-darker:hover {
   --tw-drop-shadow: drop-shadow(0 3px 3px rgba(58, 25, 0, 0.30));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -793,12 +775,12 @@ video {
 }
 
 @media (min-width: 0px) {
-  .sm\:m-2 {
-    margin: 0.5rem;
-  }
-
   .sm\:m-0 {
     margin: 0px;
+  }
+
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .sm\:ml-4 {
@@ -813,20 +795,8 @@ video {
     margin-top: 2rem;
   }
 
-  .sm\:mt-4 {
-    margin-top: 1rem;
-  }
-
-  .sm\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .sm\:h-20 {
-    height: 5rem;
-  }
-
-  .sm\:h-40 {
-    height: 10rem;
+  .sm\:ml-0 {
+    margin-left: 0px;
   }
 
   .sm\:h-36 {
@@ -867,17 +837,14 @@ video {
     padding-bottom: 0.25rem;
   }
 
-  .sm\:text-left {
-    text-align: left;
-  }
-
-  .sm\:text-right {
-    text-align: right;
-  }
-
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-sm {
@@ -885,9 +852,18 @@ video {
     line-height: 1.25rem;
   }
 
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .sm\:scrollbar-default {
+    -ms-overflow-style: auto;
+    scrollbar-width: auto;
+  }
+
+  .sm\:scrollbar-default::-webkit-scrollbar {
+    display: block;
   }
 }
 
@@ -904,16 +880,12 @@ video {
     margin-bottom: 3.5rem;
   }
 
-  .md\:ml-6 {
-    margin-left: 1.5rem;
-  }
-
   .md\:mb-0 {
     margin-bottom: 0px;
   }
 
-  .md\:mt-12 {
-    margin-top: 3rem;
+  .md\:ml-6 {
+    margin-left: 1.5rem;
   }
 
   .md\:h-40 {
@@ -944,6 +916,20 @@ video {
   .md\:pr-5 {
     padding-right: 1.25rem;
   }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .md\:scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media (min-width: 920px) {
@@ -957,10 +943,6 @@ video {
 
   .lg\:w-52 {
     width: 13rem;
-  }
-
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -977,18 +959,19 @@ video {
     width: 2rem;
   }
 
-  .laptop\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .laptop\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .laptop\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width: 1280px) {
   .desktop\:m-3 {
     margin: 0.75rem;
-  }
-
-  .desktop\:m-6 {
-    margin: 1.5rem;
   }
 
   .desktop\:mb-5 {
@@ -1014,15 +997,6 @@ video {
   .desktop\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
-  }
-
-  .desktop\:pr-0 {
-    padding-right: 0px;
-  }
-
-  .desktop\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .desktop\:text-2xl {
