@@ -14,7 +14,6 @@ module.exports = {
         '200': '2',
       },
       fontFamily: {
-      'ibmPlex': ['"IBM Plex Sans"', 'sans-serif'],
       'courier': ['"Courier Prime"', 'monospace'],
       },
       colors: {
